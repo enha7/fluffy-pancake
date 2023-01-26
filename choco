@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ChocoChipCookie</title>
+        <style>
+            html {
+                background-image: url("../images/cookie-background.jpeg");
+            }
+            nav { 
+                background-color: #cda575;
+                width: 100%;
+                padding: 20px 15px 20px 15px;
+                position: fixed;
+                margin: 0px;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .title {
+                padding-top: 20px;
+                text-decoration: none;
+                color: rgb(101,55,26);
+                font-family: "chalkduster", fantasy;
+                font-size: 40px;
+                font-stretch: expanded;
+            }
+            .nav1 {
+                margin-left: 300px;
+                float: text;
+                text-decoration: none;
+                color: rgb(101,55,26);
+                font-family: Comic Sans MS, Comic Sans, cursive;
+                font-size: 22px;
+                transition: transform 0.5s;
+            }
+            .nav2 {
+                margin-left: 50px;
+                float: text;
+                text-decoration: none;
+                color: rgb(101,55,26);
+                font-family: Comic Sans MS, Comic Sans, cursive;
+                font-size: 22px;
+            }
+            .nav3 {
+                margin-left: 50px;
+                float: text;
+                text-decoration: none;
+                color: rgb(101,55,26);
+                font-family: Comic Sans MS, Comic Sans, cursive;
+                font-size: 22px;
+            }
+            .nav4 {
+                margin-left: 50px;
+                float: text;
+                text-decoration: none;
+                color: rgb(101,55,26);
+                font-family: Comic Sans MS, Comic Sans, cursive;
+                font-size: 22px;
+            }
+            
+            .nav4:hover { 
+                transition: transform 0.7s;
+                transform: scale(1.2);
+            }
+            
+            h1 {
+                margin-top: 150px;
+                text-align: center;
+                color: rgb(255,255,255);
+                font-family: "chalkduster", fantasy;
+                font-size: 50px;
+            }
+            
+            .cookie-img {
+                height: 400px;
+                width: 40%;
+                float: right;
+                margin: 40px 70px 30px 30px;
+                border-radius: 30px;
+            }
+            
+            video {
+                margin: 70px 30px 30px 70px;
+                height: 400px;
+                width: 40%;
+                float: left;
+                border-radius: 30px;
+            }
+            
+            .div1 {
+                margin: 70px 30px 30px 70px;
+                padding: 20px 30px 30px 30px;
+                width: 40%;
+                background-color: #ecdebf;
+                font-family: Didot, serif;
+                border-radius: 30px;
+            }
+            
+            .div2 {
+                float: right;
+                margin: 40px 70px 30px 30px;
+                padding: 20px 30px 30px 30px;
+                width: 40%;
+                background-color: #ecdebf;
+                font-family: Didot, serif;
+                border-radius: 30px;
+            }
+            
+            a:hover {
+                color: white;
+                transform: scale(1.75, 1.75);
+            }
+            
+            a:active {
+                border: #ecdebf;
+            }
+            
+            footer {
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                text-align: center;
+                color: white;
+                padding: 15px;
+                border-top-style: solid;
+                border-top-color: white;
+                border-top-width: 2px;
+                clear: both;
+            }
+            
+            .twt {
+                background: url('../images/sprite-icons.png') no-repeat -230 -400;
+                background-size: 100px;
+                width: 50px;
+                height: 50px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="../index.html" class="title">
+                <img src="../images/cookie-logo.png" width=50px height=50px>
+                COOKIE LOOKIE
+            </a>
+            <a href="chocochip.html" class="nav1">Chocolate Chip</a>
+            <a href="sugar.html" class="nav2">Sugar</a>
+            <a href="macaron.html" class="nav3">Macaron</a>
+            <a href="oatmeal-raisin.html" class="nav4">Oatmeal Raisin</a>
+        </nav>
+        
+        <h1>Chocolate Chip Cookie Recipe</h1>
+
+        
+        <img src="../images/chocolate-chip-cookies.jpeg" alt="Chocolate Chip Cookie" class="cookie-img">
+        
+        <div class="div1">
+            <h4> Ingredients (for 12 cookies)</h4>
+            <ul>
+                <li>½ cup granulated sugar(100 g)</li>
+                <li>¾ cup brown sugar(165 g), packed</li>
+                <li>1 teaspoon salt</li>
+                <li>½ cup unsalted butter(115 g), melted</li>
+                <li>1 egg</li>
+                <li>1 teaspoon vanilla extract</li>
+                <li>1 ¼ cups all-purpose flour(155 g)</li>
+                <li>½ teaspoon baking soda</li>
+                <li>4 oz milk or semi-sweet chocolate chunks(110 g)</li>
+                <li>4 oz dark chocolate chunk(110 g), or your preference</li>
+            </ul>
+        </div>
+        
+        <video controls autoplay>
+            <source src="../mmfiles/chocochip.mp4">
+        </video>
+            
+        <div class="div2">
+            <h4>Procedure</h4>
+            <ol>
+                <li>In a large bowl, whisk together the sugars, salt, and butter until a paste forms with no lumps.</li>
+                <li>Whisk in the egg and vanilla, beating until light ribbons fall off the whisk and remain for a short while before falling back into the mixture.</li>
+                <li>Sift in the flour and baking soda, then fold the mixture with a spatula (Be careful not to overmix, which would cause the gluten in the flour to toughen resulting in cakier cookies).</li>
+                <li>Fold in the chocolate chunks, then chill the dough for at least 30 minutes. For a more intense toffee-like flavor and deeper color, chill the dough overnight. The longer the dough rests, the more complex its flavor will be.</li>
+                <li>Preheat oven to 350°F (180°C). Line a baking sheet with parchment paper.</li>
+                <li>Scoop the dough with an ice-cream scoop onto a parchment paper-lined baking sheet, leaving at least 4 inches (10 cm) of space between cookies and 2 inches (5 cm) of space from the edges of the pan so that the cookies can spread evenly.</li>
+                <li>Bake for 12-15 minutes, or until the edges have started to barely brown.</li>
+                <li>Cool completely before serving.</li>
+                <li>Enjoy!</li>
+            </ol>
+        </div>
+        <footer>
+            COPYRIGHT © ERIKA REMITIO
+            <div class="twt"> 
+                <a href="https://twitter.com/potadumps?t=VJZj3hAoB_qTLNOlTy9_Qg&s=09"></a>
+            </div>
+            <div class="fb">
+                <a href="https://www.facebook.com/profile.php?id=100008345500724&mibextid=ZbWKwL"></a>
+            </div>
+        </footer>
+    </body>
+</html>
