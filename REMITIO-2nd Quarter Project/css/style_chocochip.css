@@ -1,0 +1,166 @@
+html {
+    background-image: url("../images/cookie-background.jpeg");
+}
+            
+.title {
+    text-decoration: none;
+    color: rgb(101,55,26);
+    font-family: "chalkduster", fantasy;
+    font-size: 40px;
+    font-stretch: expanded;
+}
+                
+nav { 
+    background-color: #cda575;
+    z-index: 1;
+    height: 110px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+            
+nav img{
+    overflow-y: hidden;
+    margin: 25px 0 0 30px;
+}
+            
+nav img:hover {
+    transition: transform 0.9s;
+    transform: rotate(-0.75turn);
+    -webkit-transform: rotate(-0.75turn);
+    -ms-transform: rotate(-0.75turn);
+    -mos-transform: rotate(-0.75turn);
+    -o-transform: rotate(-0.75turn);
+}
+            
+.container{
+    float: right; 
+}
+            
+nav ul{
+    flex: 1;
+    margin-top: 10px;
+}
+            
+nav ul li{
+    display: inline-block; 
+    list-style: none; 
+    text-align: center;
+    height: 50px;
+    width: 200px;
+    padding-top: 10px;
+}
+            
+nav ul li a{ 
+    position: relative;
+    text-decoration: none;
+    color: rgb(101,55,26);
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 22px;
+}
+            
+nav ul li p{
+    transition: .3s;
+}
+            
+nav ul li p:hover{
+    color: white;
+    transform: scale(1.2);
+}
+            
+nav ul li p:active {
+    border-bottom: solid 2px #ecdebf;
+}
+            
+h1 {
+    margin-top: 150px;
+    text-align: center;
+    color: rgb(255,255,255);
+    font-family: "chalkduster", fantasy;
+    font-size: 50px;
+}
+            
+.cookie-img {
+    height: 400px;
+    width: 40%;
+    float: right;
+    margin: 30px 70px 0px 30px;
+}
+            
+video {
+    height: 400px;
+    width: 40%;
+    float: right;
+    margin-right: 70px;
+}
+            
+.div1 {
+    margin: 30px 30px 30px 70px;
+    padding: 15px 30px 30px 30px;
+    width: 40%;
+    background-color: #ecdebf;
+    font-family: Didot, serif;
+    border-radius: 30px;
+    float: left;
+    list-style-type: square;
+}
+            
+.div2 {
+    float: left;
+    margin: 0px 30px 60px 70px;
+    padding: 15px 30px 30px 30px;
+    width: 40%;
+    background-color: #ecdebf;
+    font-family: Didot, serif;
+    border-radius: 30px;
+}
+            
+footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: 2px;
+    clear: both;
+}
+            
+footer p {
+    margin: 10px;
+}
+            
+.twt {
+    background-image: url("../images/sprite-icons.png");
+    background-size: 300px;
+    background-position: -373px -105px;
+    width: 50px;
+    height: 50px;
+    margin-left: 45.5%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+                
+.twt:hover {
+    background-position: -367px -207px;
+}
+            
+.fb {
+    background-image: url("../images/sprite-icons.png");
+    background-size: 300px;
+    background-position: -317px -105px;
+    width: 50px;
+    height: 50px;
+    float: right;
+    clear: left;
+    margin-right: 45.5%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+            
+.fb:hover {
+    background-position: -310px -207px;
+}
