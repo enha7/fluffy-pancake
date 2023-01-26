@@ -2,66 +2,88 @@
 <html>
     <head>
         <title>ChocoChipCookie</title>
+        <link rel="icon" type="image/x-icon" href="../images/cookie-logo.png">
         <style>
+            * {    
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+            
             html {
                 background-image: url("../images/cookie-background.jpeg");
             }
-            nav { 
-                background-color: #cda575;
-                width: 100%;
-                padding: 20px 15px 20px 15px;
-                position: fixed;
-                margin: 0px;
-                top: 0;
-                left: 0;
-                z-index: 1;
-            }
+            
             .title {
-                padding-top: 20px;
                 text-decoration: none;
                 color: rgb(101,55,26);
                 font-family: "chalkduster", fantasy;
                 font-size: 40px;
                 font-stretch: expanded;
             }
-            .nav1 {
-                margin-left: 300px;
-                float: text;
-                text-decoration: none;
-                color: rgb(101,55,26);
-                font-family: Comic Sans MS, Comic Sans, cursive;
-                font-size: 22px;
-                transition: transform 0.5s;
+                
+            nav { 
+                background-color: #cda575;
+                z-index: 1;
+                height: 110px;
+                width: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
             }
-            .nav2 {
-                margin-left: 50px;
-                float: text;
-                text-decoration: none;
-                color: rgb(101,55,26);
-                font-family: Comic Sans MS, Comic Sans, cursive;
-                font-size: 22px;
+            
+            nav img{
+                overflow-y: hidden;
+                margin: 25px 0 0 30px;
             }
-            .nav3 {
-                margin-left: 50px;
-                float: text;
-                text-decoration: none;
-                color: rgb(101,55,26);
-                font-family: Comic Sans MS, Comic Sans, cursive;
-                font-size: 22px;
+            
+            nav img:hover {
+                transition: transform 0.9s;
+                transform: rotate(-0.75turn);
+                -webkit-transform: rotate(-0.75turn);
+                -ms-transform: rotate(-0.75turn);
+                -mos-transform: rotate(-0.75turn);
+                -o-transform: rotate(-0.75turn);
             }
-            .nav4 {
-                margin-left: 50px;
-                float: text;
+            
+            .container{
+                float: right; 
+            }
+            
+            nav ul{
+                flex: 1;
+                margin-top: 45px;
+            }
+            
+            nav ul li{
+                display: inline-block; 
+                list-style: none; 
+                text-align: center;
+                height: 50px;
+                width: 200px;
+                padding-top: 10px;
+            }
+            
+            nav ul li a{ 
+                position: relative;
                 text-decoration: none;
                 color: rgb(101,55,26);
                 font-family: Comic Sans MS, Comic Sans, cursive;
                 font-size: 22px;
             }
             
-            .nav4:hover { 
-                transition: transform 0.7s;
-                transform: scale(1.2);
+            nav ul li p{
+                transition: .3s;
             }
+            
+                nav ul li p:hover{
+                    color: white;
+                    transform: scale(1.2);
+                }
+            
+                nav ul li p:active {
+                    border-bottom: solid 2px #ecdebf;
+                }
             
             h1 {
                 margin-top: 150px;
@@ -75,30 +97,30 @@
                 height: 400px;
                 width: 40%;
                 float: right;
-                margin: 40px 70px 30px 30px;
-                border-radius: 30px;
+                margin: 50px 70px 0px 30px;
             }
             
             video {
-                margin: 70px 30px 30px 70px;
                 height: 400px;
                 width: 40%;
-                float: left;
-                border-radius: 30px;
+                float: right;
+                margin-right: 70px;
             }
             
             .div1 {
-                margin: 70px 30px 30px 70px;
+                margin: 50px 30px 30px 70px;
                 padding: 20px 30px 30px 30px;
                 width: 40%;
                 background-color: #ecdebf;
                 font-family: Didot, serif;
                 border-radius: 30px;
+                float: left;
+                list-style-type: square;
             }
             
             .div2 {
-                float: right;
-                margin: 40px 70px 30px 30px;
+                float: left;
+                margin: 0px 30px 60px 70px;
                 padding: 20px 30px 30px 30px;
                 width: 40%;
                 background-color: #ecdebf;
@@ -106,14 +128,6 @@
                 border-radius: 30px;
             }
             
-            a:hover {
-                color: white;
-                transform: scale(1.75, 1.75);
-            }
-            
-            a:active {
-                border: #ecdebf;
-            }
             
             footer {
                 width: 100%;
@@ -121,19 +135,49 @@
                 left: 0;
                 text-align: center;
                 color: white;
-                padding: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
                 border-top-style: solid;
                 border-top-color: white;
                 border-top-width: 2px;
                 clear: both;
             }
             
-            .twt {
-                background-image: url('../images/sprite-icons.png') no-repeat -296px -240px;
-                width: 160px;
-                height: 136px;
-                background-size: 100px;
+            footer p {
+                margin: 10px;
             }
+            
+            .twt {
+                background-image: url("../images/sprite-icons.png");
+                background-size: 300px;
+                background-position: -373px -105px;
+                width: 50px;
+                height: 50px;
+                margin-left: 45.5%;
+                margin-bottom: 15px;
+                border-radius: 10px;
+            }
+                
+                .twt:hover {
+                    background-position: -367px -207px;
+                }
+            
+            .fb {
+                background-image: url("../images/sprite-icons.png");
+                background-size: 300px;
+                background-position: -317px -105px;
+                width: 50px;
+                height: 50px;
+                float: right;
+                clear: left;
+                margin-right: 45.5%;
+                margin-bottom: 15px;
+                border-radius: 10px;
+            }
+            
+                .fb:hover {
+                    background-position: -310px -207px;
+                }
             
         </style>
     </head>
@@ -143,15 +187,19 @@
                 <img src="../images/cookie-logo.png" width=50px height=50px>
                 COOKIE LOOKIE
             </a>
-            <a href="chocochip.html" class="nav1">Chocolate Chip</a>
-            <a href="sugar.html" class="nav2">Sugar</a>
-            <a href="macaron.html" class="nav3">Macaron</a>
-            <a href="oatmeal-raisin.html" class="nav4">Oatmeal Raisin</a>
+                
+            <div class="container">
+                <ul>
+                    <li><a href="chocochip.html" ><p>Chocolate Chip</p></a>
+                    <li><a href="sugar.html" ><p>Sugar</p></a>
+                    <li><a href="macaron.html" ><p>Macaron</p></a>
+                    <li><a href="oatmeal-raisin.html" ><p>Oatmeal Raisin</p></a>
+                </ul>
+            </div>
         </nav>
         
         <h1>Chocolate Chip Cookie Recipe</h1>
 
-        
         <img src="../images/chocolate-chip-cookies.jpeg" alt="Chocolate Chip Cookie" class="cookie-img">
         
         <div class="div1">
@@ -169,10 +217,6 @@
                 <li>4 oz dark chocolate chunk(110 g), or your preference</li>
             </ul>
         </div>
-        
-        <video controls autoplay muted>
-            <source src="../mmfiles/chocochip.mp4">
-        </video>
             
         <div class="div2">
             <h4>Procedure</h4>
@@ -188,14 +232,20 @@
                 <li>Enjoy!</li>
             </ol>
         </div>
+        
+        <video controls autoplay muted>
+            <source src="../mmfiles/chocochip.mp4">
+        </video>
+        
         <footer>
-            COPYRIGHT © ERIKA REMITIO
-            <div class="twt"> 
-                <a href="https://twitter.com/potadumps?t=VJZj3hAoB_qTLNOlTy9_Qg&s=09"></a>
-            </div>
-            <div class="fb">
-                <a href="https://www.facebook.com/profile.php?id=100008345500724&mibextid=ZbWKwL"></a>
-            </div>
+            <p> VISIT US! </p>
+            <a href="https://www.facebook.com/profile.php?id=100008345500724&mibextid=ZbWKwL">
+                <div class="fb"></div>
+            </a>
+             <a href="https://twitter.com/potadumps?t=VJZj3hAoB_qTLNOlTy9_Qg&s=09">
+                 <div class="twt"></div>
+            </a>
+            <p> COPYRIGHT © ERIKA REMITIO </p>
         </footer>
     </body>
 </html>
