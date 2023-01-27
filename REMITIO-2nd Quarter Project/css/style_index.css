@@ -76,7 +76,7 @@ h1 {
     margin-top: 170px;
     text-align: center;
     color: white;
-    font-family: "chalkduster", fantasy;
+    font-family: "chalkduster";
     font-size: 90px;
     text-shadow: 5px 5px 5px #cda575;
     }
@@ -84,15 +84,20 @@ h1 {
 h3 {
     text-align: center;
     color: white;
-    font-family: "chalkduster", fantasy;
+    font-family: "chalkduster";
     font-size: 30px;
 }
 
+	@font-face {
+		font-family: "chalkduster";
+		src: url(../mmfiles/Chalkduster.ttf);
+	}
+
 .magazine {
     display: flex;
-	margin: auto;
-	justify-content: center;
-  	align-items: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .magazine div {
