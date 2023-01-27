@@ -83,14 +83,14 @@ h1 {
             
 .cookie-img {
     height: 400px;
-    width: 550px;
+    width: 520px;
     float: right;
     margin: 30px 70px 0px 30px;
 }
             
 video {
     height: 400px;
-    width: 550px;
+    width: 520px;
     float: right;
     margin-right: 70px;
 }
@@ -98,7 +98,7 @@ video {
 .div1 {
     margin: 30px 30px 30px 70px;
     padding: 15px 30px 30px 30px;
-    width: 550px;
+    width: 520px;
     background-color: #ecdebf;
     font-family: Didot, serif;
     border-radius: 30px;
@@ -110,7 +110,7 @@ video {
     float: left;
     margin: 0px 30px 60px 70px;
     padding: 15px 30px 30px 30px;
-    width: 550px;
+    width: 520px;
     background-color: #ecdebf;
     font-family: Didot, serif;
     border-radius: 30px;
